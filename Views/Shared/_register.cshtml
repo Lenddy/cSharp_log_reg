@@ -1,0 +1,41 @@
+@model log_reg_Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Register</h1>
+    <form action="/register" method="post">
+        <div>
+        <label asp-for="f_name"></label>
+        <input type="text" asp-for="f_name" id="">
+        <span asp-validation-for="f_name" ></span>
+        </div>
+        <div>
+        <label asp-for="l_Name"></label>
+        <input type="text" asp-for="l_Name" id="">
+        <span asp-validation-for="l_Name" ></span>
+        </div>
+        <div>
+        <label asp-for="email"></label>
+        <input type="text" asp-for="email" id="">
+        <span asp-validation-for="email" ></span>
+        </div>
+        <div>
+        <label asp-for="password"></label>
+        <input  asp-for="password" id="">
+        <span asp-validation-for="password" ></span>
+        </div>
+        <div>
+        <label asp-for="confirm_password"></label>
+        <input  asp-for="confirm_password" id="">
+        <span asp-validation-for="confirm_password" ></span>
+        </div>
+        <button>create</button>
+    </form>
+</body>
+</html>
